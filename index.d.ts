@@ -86,7 +86,7 @@ declare class IGCParser {
     private lineNumber;
     private prevTimestamp;
     static parse(str: string, options?: IGCParser.Options): IGCParser.IGCFile;
-    readonly result: IGCParser.IGCFile;
+    get result(): IGCParser.IGCFile;
     private processLine;
     private processHeader;
     private parseARecord;

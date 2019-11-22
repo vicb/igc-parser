@@ -178,10 +178,6 @@ class IGCParser {
   }
 
   get result(): IGCParser.IGCFile {
-    if (!this._result.loggerId) {
-      throw new Error(`Missing A record`);
-    }
-
     if (!this._result.date) {
       throw new Error(`Missing HFDTE record`);
     }

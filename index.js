@@ -67,9 +67,6 @@ var IGCParser = /** @class */ (function () {
     };
     Object.defineProperty(IGCParser.prototype, "result", {
         get: function () {
-            if (!this._result.loggerId) {
-                throw new Error("Missing A record");
-            }
             if (!this._result.date) {
                 throw new Error("Missing HFDTE record");
             }
